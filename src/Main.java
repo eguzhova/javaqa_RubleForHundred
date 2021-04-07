@@ -8,7 +8,7 @@ public class Main {
             int bonusAmmount = summAdded / bonusStep * 100;
             currentBalance += summAdded + bonusAmmount;
         }
-        else currentBalance = currentBalance + summAdded;
+        else currentBalance += summAdded;
         int balanceRuble = currentBalance / 100;
         int balanceCents = currentBalance % 100;
         System.out.println("Баланс после пополнения: "+balanceRuble+" руб. "+balanceCents+" коп.");
